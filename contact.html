@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Contact/style/_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./Contact/script/script.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="header-top_logo">
+                <div class="logo"><a href="./index.html"><img src="./Contact/logo/logo.png" alt="Logo website"></a>
+                </div>
+            </div>
+            <div class="header-top_menu">
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./service.html">Sevice</a></li>
+                    <li><a href="./Blog.html">Blog</a></li>
+                    <li><a href="./contact.html" style="color:#fff">Contact Us</a></li>
+                    <li><a href="#"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-search" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="10" cy="10" r="7"></circle>
+                                    <line x1="21" y1="21" x2="15" y2="15"></line>
+                                </svg></a></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="header-info">contact us</div>
+    </div>
+
+    <div class="main-content">
+        <div class="main-content-tag">
+            <form action="#">
+                <div class="input-style"><input type="text" id="name" name="fname" value="" placeholder="Name"></div>
+                <div class="input-style"><input type="text" id="phoneNum" name="phoneNum" value=""
+                        placeholder="Phone number"></div>
+                <div class="input-style"><input type="text" id="email" name="email" value="" placeholder="Email"></div>
+                <div class="input-style"><input type="text" id="mess" name="message" value="" placeholder="Message">
+                </div>
+
+                <button class="button" onclick="replySubmit()">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="pop-up" id="pop-up">
+        <div class="title" id="pop-title">Chúc mừng</div>
+        <div class="notify" id="pop-notify">Thông tin của bạn đã được gửi</div>
+        <button type="button" class="button" id="pop-button">Ok</button>
+    </div>
+
+    <div class="footer">
+        © 2022 All Rights Reserved
+    </div>
+</body>
+
+</html>

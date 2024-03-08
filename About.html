@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About</title>
+   <link rel="stylesheet" href="./About/css/about1_style.css">
+   <script src="about1_style.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>
+      $(document).ready(function () {
+         $("#hide").click(function () {
+            $("p").hide();
+         });
+         $("#show").click(function () {
+            $("p").show();
+         });
+      });
+   </script>
+
+</head>
+
+<body>
+   <style>
+      body {
+         background-image: url("./About/hinhanh5.jpg");
+         max-width: 100%;
+         height: auto;
+      }
+   </style>
+   <section>
+
+      <header>
+         <div class="header-top">
+            <div class="header-top_logo">
+               <div class="logo"><a href="./index.html"><img src="./About/logo/logo.png" alt="Logo website"></a></div>
+            </div>
+            <div class="header-top_menu">
+               <ul class="menu">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./About.html" style="color:#fff">About</a></li>
+                  <li><a href="./service.html">Sevice</a></li>
+                  <li><a href="./Blog.html">Blog</a></li>
+                  <li><a href="./contact.html">Contact Us</a></li>
+                  <li><a href="#"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                              class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24"
+                              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                              stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                              <circle cx="10" cy="10" r="7"></circle>
+                              <line x1="21" y1="21" x2="15" y2="15"></line>
+                           </svg></a></a></li>
+               </ul>
+               <!-- <div class="search"></div> -->
+            </div>
+      </header>
+      <nav>
+         <h1>ABOUT</h1>
+      </nav>
+
+      <div class=" content">
+         <div class="textBox">
+            <h2 style="font-size:3.5vw;">Giới Thiệu TP.Đà Lạt<br> DALAT<span>City</span> </h2>
+            <p>Đà Lạt là thành phố du lịch, nghỉ dưỡng khá nổi tiếng ở Việt Nam
+               và trên thế giới với nhiều tên gọi thân thương như :
+               thành phố ngàn hoa, thành phố ngàn thông, thành phố sương mù,
+               thành phố của tình yêu và nổi nhớ hay Paris thu nhỏ,…
+               Đây là thành phố hơn 120 năm tuổi được người Pháp xây dựng
+               để làm nơi nghỉ dưỡng, hồi sức cho lính viễn chinh Pháp
+               trong thời kì xâm lược Việt Nam.</p>
+
+            <button id="hide">Ẩn</button>
+            <button id="show">Hiện</button><br>
+
+            <a href="#"> Read More</a>
+         </div>
+         <div class="imgBox">
+            <img ide="img" onclick="changeImage()" src="./About/hinhso1.jpg" alt=" style="
+               style="width:300%;height:auto;">
+         </div>
+         <script>
+            var index = 1;
+            function changeImage() {
+               var imgs = ["./About/hinhso1.jpg", "./About/hinhso2.jpg", "./About/hinhso3.png"];
+               document.getElementById('img').src = imgs[index];
+               index++;
+               if (index == 3) {
+                  index = 0
+               }
+            }
+         </script>
+      </div>
+      </div>
+      <footer>
+         <div class="footer">
+            <p1>© 2022 All Rights Reserved</a></p1>
+         </div>
+      </footer>
+   </section>
+   </div>
+   </script>
+</body>
+
+</html>
